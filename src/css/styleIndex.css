@@ -34,3 +34,19 @@ header {
 .nav__links li a:hover {
     color: red;
 }
+
+#card-div {
+  display: flex;
+  height: auto;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.card {
+  flex: 0 1 calc(33.333% - 10.66px);
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+}
