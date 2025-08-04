@@ -13,18 +13,35 @@ function cards(data) {
     const card = document.createElement("div");
     card.className = `card`;
 
+    const inner = document.createElement("div");
+    inner.className = `card-inner`;
+
+    const front = document.createElement("div");
+    front.className = `card-front`;
+
     if (item.headshot_url) {
-        card.style.backgroundImage = `url('${item.headshot_url}') `;
+      front.style.backgroundImage = `url('${item.headshot_url}')`;
     } else {
-        card.innerText = "No Foto found";
-        card.style.textAlign = "center";
+      front.textContent = "No Foto found";
     }
 
-    card.style.backgroundSize = "contain";
-    card.style.backgroundRepeat = "no-repeat";
-    card.style.backgroundPosition = "center";
-    card.style.height = "200px";
+    front.style.display = "flex";
+    front.style.alignItems = "center";
+    front.style.justifyContent = "center";
 
+    const back = document.createElement("div");
+    back.className = "card-back";
+    back.innerHTML = `
+      <div>
+        <h3>${item.first_name} ${item.last_name}</h3>
+        <p>${item.driver_number}</p>
+        <p>${item.team_name}</p>
+      </div>
+    `;
+
+    inner.appendChild(front);
+    inner.appendChild(back);
+    card.appendChild(inner);
     container.appendChild(card);
   });
 }

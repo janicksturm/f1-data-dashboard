@@ -1,19 +1,46 @@
 #card-div {
   display: flex;
-  height: auto;
   flex-wrap: wrap;
   gap: 16px;
   justify-content: space-between;
 }
 
 .card {
-  flex: 0 1 calc(33.333% - 10.66px);
-  border-radius: 8px;
-  padding: 16px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  width: calc(25% - 250px);
+  height: 250px;
+}
+
+.card-inner {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  backface-visibility: hidden;
   box-sizing: border-box;
 }
 
-.card:hover {
-  background-color: wheat;
+.card-front {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 16px;
 }
