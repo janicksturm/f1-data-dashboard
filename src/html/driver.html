@@ -5,19 +5,21 @@
         <title></title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/styleDriver.css">
     </head>
     <body>
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>DriverNumber</th>
-                    <th>Name</th>
-                    <th>Team</th>
-                </tr>
-            </thead>
-            <tbody id="driverTableBody">
-            </tbody>
-        </table>
-        <script src="../js/readData.js"></script>
+        <header>
+            <img class="logo" src="../images/f1logo.png" height="90px" width="90px" alt="logo">
+
+            <ul class="nav__links">
+                <li><a href="./driver.html">Fahrer</a></li>
+                <li><a href="./circuits.html">Circuits</a></li>
+            </ul>
+        </header>
+        <main>
+            <div id="card-div"></div>
+
+            <script src="../js/createCards.js"></script>
+        </main>
     </body>
 </html>
