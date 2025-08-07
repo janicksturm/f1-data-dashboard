@@ -22,7 +22,7 @@ function cards(data) {
     if (item.headshot_url) {
       front.style.backgroundImage = `url('${item.headshot_url}')`;
     } else {
-      front.textContent = "No Foto found";
+      front.textContent = `No Foto of ${item.last_name}`;
     }
 
     front.style.display = "flex";
