@@ -13,5 +13,7 @@ An interactive web application for visualizing Formula 1 data
 
 ## Tech Stack
 - **Frontend:** HTML, CSS, JavaScript
-- **API:** https://openf1.org/ 
+- **API:** 
+  - https://openf1.org/ 
+  - https://github.com/jolpica/jolpica-f1
 - **Deployment:** Docker (web server)
