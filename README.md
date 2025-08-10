@@ -5,9 +5,10 @@ An interactive web application for visualizing Formula 1 data
 ## Features
 - Formula 1 data retrieval via API
 - Clear presentation of driver as card-based UI
+- Visualization of the current circuits
 - Planned features:
   - Display of the top 3 winners each race
-  - Visualization of circuit locations and team details
+  - Visualization of team details
 
 
 ## Tech Stack
