@@ -1,0 +1,46 @@
+h1 {
+    text-align: center;
+}
+
+hr {
+    margin: -1% 10% 0% 10%;
+}
+
+#race-container {
+    padding: 2% 15% 5% 15%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.race-box {
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.race-image {
+    width: 200px;
+    height: 120px;
+}
+
+.race-info {
+    padding: 15px;
+    flex: 1;
+}
+
+.race-info h2 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.race-info p {
+    margin: 4px 0;
+}
+
+.race-info a {
+    display: inline-block;
+    margin-top: 10px;
+    color: rgb(205, 47, 35);
+    font-weight: bold;
+}
