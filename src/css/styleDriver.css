@@ -1,3 +1,11 @@
+h1 {
+    text-align: center;
+}
+
+hr {
+    margin: -1% 10% 2% 10%;
+}
+
 #card-div {
   display: flex;
   flex-wrap: wrap;
